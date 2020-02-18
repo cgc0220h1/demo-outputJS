@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị đầu ra bằng innerHTML trong Javascript</title>
+</head>
+<body>
+<div id="messageBrowser">
+    <table>
+        <tr>
+            <td>Hôm nay ăn gì</td>
+            <td>Hôm nay ăn cơm</td>
+        </tr>
+        <tr>
+            <td>Ngày hôm nay là</td>
+            <td>18/02/2020</td>
+        </tr>
+    </table>
+    <button type="button" onclick="showMessage()">Click me!</button>
+    <script>
+        //Script này thay toàn bộ nội dung của cục div thành "Hello Handsome"
+        function showMessage() {
+            document.getElementById('messageBrowser').innerHTML="Hello Handsome"
+        }
+    </script>
+</div>
+</body>
+</html>
